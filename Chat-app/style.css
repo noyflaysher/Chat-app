@@ -105,12 +105,7 @@ body{
       margin-top: 3px;
     }
 
-    
-
-    .threeDots{
-      margin-right: 10px;
-    }
-
+   
     .leftMsg{
       font-size: 12px;
       color: hsl(276, 55%, 52%);
@@ -122,6 +117,28 @@ body{
       margin-left: 10px;
     }
 
+    .animationOne{
+      animation-name: opacityanimtion;
+      animation-duration: 4s;
+      animation-direction: alternate;
+      position: relative;
+    }
+
+    @keyframes opacityanimtion {
+      0%{ opacity: 0;}
+    100%{opacity: 1;}
+    }
+
+
+    .animationTwo{
+      animation-name: opacityanimtion;
+      animation-duration: 7s;
+      animation-fill-mode: forwards;
+      
+      
+    }
+
+
     .right{
       display: flex;
       margin-top: 15px;
@@ -132,8 +149,28 @@ body{
     .dog-pictures{
       display: flex;
       justify-content: flex-end;
-
+      animation-name: dogsanimation;
+      animation-duration: 3s;
+      animation-delay: 2s;
     }
+
+   
+
+    @keyframes dogsanimation {
+      from {
+          transform : scale(1);
+          opacity   : 1;
+      }
+      50% {
+          transform : scale(0.75);
+          opacity   : 0.25;
+      }
+      to {
+          transform : scale(1);
+          opacity   : 1;
+      }
+  }
+
     .dog-pictures img{
       border-radius: 10px;
       margin-right: 8px;
@@ -153,11 +190,35 @@ body{
 
     .msg-1{
       width:170px;
+      animation-name: moveLeft;
+      animation-duration: 3s;
+      animation-delay: 3.5s;
     }
 
     .msg-2{
       width:100px;
+      animation-name: moveLeft;
+      animation-duration: 3s;
+      animation-delay: 4s;
     }
+
+    @keyframes moveLeft {
+      0% { transform : translateX(0em)}
+      50%   { transform : translateX(-3em) } /* slide down to make room for advertisements */
+      100%{ transform : translateX(0em) }
+  }
+
+  .msg-3{
+      animation-name: opacityanimtion;
+      animation-duration: 22s;
+    }
+
+    @keyframes changeColor {
+      0%{background-color:powderblue;}
+      25%{background-color: palevioletred;}
+      50%{background-color:pink}
+      25%{background-color:purple}
+  }
 
     .payment{
       display: flex;
@@ -179,6 +240,25 @@ body{
       margin-right: 10px;
     }
 
+    .payment-1{
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-delay: 7s;
+    }
+
+    .payment-2{
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-delay:8s;
+    }
+
+
+   @keyframes rotate {
+    
+      0%{transform: rotateY(360deg);}
+    }
+
+
     .fa-angle-right{
       margin:auto;
       size:45px;
@@ -197,7 +277,18 @@ body{
       padding: 8px;
       color:hsl(264, 8%, 88%);
       font-size: 12px;
+      animation-name: changeColor;
+      animation-duration: 2s;
+      animation-delay: 10s;
     }
+
+
+    @keyframes changeColor {
+      0%{background-color:powderblue;}
+      25%{background-color: palevioletred;}
+      50%{background-color:sandybrown}
+      25%{background-color:springgreen}
+  }
 
     .angleRightCircle{
       background-color: hsl(271, 36%, 24%);
@@ -207,6 +298,9 @@ body{
       justify-content: center;
       width:30px;
       height: 30px;
+      animation-name: moveLeft;
+      animation-duration: 2s;
+      animation-delay: 10s;
     }
       
     .content{
