@@ -13,7 +13,7 @@ body{
   background-color: hsl(270, 20%, 96%);
 }
 
-@media only screen and (max-width:1440px){
+
   .purple{
     background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
     position: absolute;
@@ -188,6 +188,8 @@ body{
       
     }
 
+    
+
     .msg-1{
       width:170px;
       animation-name: moveLeft;
@@ -328,80 +330,65 @@ body{
      left:640px;
      
    }
-    
 
-
- /* .content{
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    font-weight: 500;
-    left: 720px;
-    top:300px;
-  }
-
-  h1{
-    font-weight: 700;
-    font-size: 40px;
-  }
-  .content p{
-    line-height: 25px;
-    font-weight: 500;
-    margin-top: 20px;
-    color:hsl(270, 7%, 64%);
-    
-  }
-
-  
- 
+   @media only screen and (max-width:1440px){
    }
 
-   .main-iphone{
-    display: flex;
-    flex-direction:column;
-    box-sizing: border-box;
-    justify-content:space-between;
-    box-sizing: border-box;
-    position: relative;
-    align-items: flex-start;
+   @media screen and (max-width: 375px) {
 
-  
-  }
-
-  .headline-phone{
-    background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
-    width:270px;
-    height:85px;
-    border-radius: 40px 40px 10px 10px;
-    margin:0;
-  }
-
-  .message{
-    color: hsl(276, 55%, 52%);
-    background-color:hsl(270, 46%, 90%) ;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    padding:7px;
-    
-  
-  }
-
-  .dog-pictures{
-    display: flex;
-    box-sizing: border-box;
-    justify-content:space-between;
-    box-sizing: border-box;
-    align-items: flex-start; 
-  }
-
-  .attribution{
-    position: absolute;
-    bottom: 0;
-    display: block;
-    text-align: center;
-  }*/
+    .purple{
+        position: absolute;
+        height: 1200px;
+        width:800px;
+    }
 
 
-}  
+    .iphone
+    {
+        position: relative;
+        left:500px;
+        top:250px;
+        height: 810px;
+        width:410px;
+        
+        
+    }
+
+    .typeMsg{
+      font-size: 20px;
+      width: 300px;
+      
+    }
+
+    .dog{
+      width:80px;
+      height:80px ;
+    }
+    .rightMsg{
+      width:250px;
+        font-size: 20px;
+    }
+    .leftMsg{
+        width:250px;
+        font-size: 20px;
+    }
+
+    .payment{
+      width:220px;
+      font-size: 20px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      margin:auto;
+      left: 720px;
+      top:1150px;
+      font-size: 22px;
+      
+    }
+
+}
    
