@@ -1,0 +1,392 @@
+
+*{
+  margin:0px;
+  padding: 0px;
+}
+
+body{
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  background-color: hsl(270, 20%, 96%);
+}
+
+
+  .purple{
+    background: linear-gradient(hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    position: absolute;
+    left:-100px;
+    top:0;
+    width:500px;
+    height: 760px;
+    border-radius:0px 0px 47% 47%;
+  }
+
+  .iphone{
+      position: relative;
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;    display: flex;
+     width: 310px;
+     height: 600px;
+     background-color:  hsl(270, 20%, 96%);
+     border-radius: 40px;
+     border: solid white 8px;
+     left:320px;
+     z-index: 1;
+     top:120px;
+     box-sizing: border-box;
+      font-weight: 550;
+    }
+
+    .main-iphone{
+      width:100%;
+    }
+
+    .top-phone{
+      border-radius: 20px 20px 10px 10px;
+      background: linear-gradient(to left, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+  
+    }
+
+    .camera{
+      background-color: white;
+      margin:auto;
+      border-radius: 0px 0px 15px 15px;
+      height: 20px;
+      width:130px;
+    
+    }
+
+    .head{
+      width: 100%;
+      display: flex;
+      
+      align-items: center;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      margin-left: 10px;
+     
+    }
+
+    .fa-angle-left{
+      color:white;
+      margin-right: 10px;
+    }
+
+    .fa-ellipsis-v{
+      color:white;
+      margin-right: 30px;
+    }
+
+
+    .left-head{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width:270px;
+      
+    }
+
+    .left-head img{
+      border-radius: 50%;
+      border:2px solid white;
+      margin-right: 10px;
+    }
+
+    .description h2{
+      font-size: 18px;
+      color:white;
+    }
+
+    .description p{
+      font-size: 12px;
+      color:hsl(270, 20%, 96%);
+      margin-top: 3px;
+    }
+
+   
+    .leftMsg{
+      font-size: 12px;
+      color: hsl(276, 55%, 52%);
+      padding:7px;
+      border-radius: 10px;
+      background-color: hsl(272, 54%, 93%);
+      width:190px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .animationOne{
+      animation-name: opacityanimtion;
+      animation-duration: 4s;
+      animation-direction: alternate;
+      position: relative;
+    }
+
+    @keyframes opacityanimtion {
+      0%{ opacity: 0;}
+    100%{opacity: 1;}
+    }
+
+
+    .animationTwo{
+      animation-name: opacityanimtion;
+      animation-duration: 7s;
+      animation-fill-mode: forwards;
+      
+      
+    }
+
+
+    .right{
+      display: flex;
+      margin-top: 15px;
+      flex-direction: column;
+     align-items: flex-end;
+    }
+
+    .dog-pictures{
+      display: flex;
+      justify-content: flex-end;
+      animation-name: dogsanimation;
+      animation-duration: 3s;
+      animation-delay: 2s;
+    }
+
+   
+
+    @keyframes dogsanimation {
+      from {
+          transform : scale(1);
+          opacity   : 1;
+      }
+      50% {
+          transform : scale(0.75);
+          opacity   : 0.25;
+      }
+      to {
+          transform : scale(1);
+          opacity   : 1;
+      }
+  }
+
+    .dog-pictures img{
+      border-radius: 10px;
+      margin-right: 8px;
+    }
+
+    .rightMsg{
+      font-size: 12px;
+      color: black;
+      padding:7px;
+      border-radius: 10px;
+      background-color: white;
+      width:190px;
+      margin-top: 10px;
+      margin-right: 10px;
+      
+    }
+
+    
+
+    .msg-1{
+      width:170px;
+      animation-name: moveLeft;
+      animation-duration: 3s;
+      animation-delay: 3.5s;
+    }
+
+    .msg-2{
+      width:100px;
+      animation-name: moveLeft;
+      animation-duration: 3s;
+      animation-delay: 4s;
+    }
+
+    @keyframes moveLeft {
+      0% { transform : translateX(0em)}
+      50%   { transform : translateX(-3em) } /* slide down to make room for advertisements */
+      100%{ transform : translateX(0em) }
+  }
+
+  .msg-3{
+      animation-name: opacityanimtion;
+      animation-duration: 22s;
+    }
+
+    @keyframes changeColor {
+      0%{background-color:powderblue;}
+      25%{background-color: palevioletred;}
+      50%{background-color:pink}
+      25%{background-color:purple}
+  }
+
+    .payment{
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+      width:200px;
+      margin-top: 10px;
+      border-radius: 10px 10px 10px 3px;
+      color:white;
+      font-size: 12px;
+      align-items: center;
+      padding:12px;
+      margin-left: 10px;
+    }
+
+    .payment p{
+      font-weight: 700;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .payment-1{
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-delay: 7s;
+    }
+
+    .payment-2{
+      animation-name: rotate;
+      animation-duration: 3s;
+      animation-delay:8s;
+    }
+
+
+   @keyframes rotate {
+    
+      0%{transform: rotateY(360deg);}
+    }
+
+
+    .fa-angle-right{
+      margin:auto;
+      size:45px;
+    }
+
+    .typeMsg{
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 20px;
+      align-items: center;
+      width:250px;
+      
+      margin:auto;
+      margin-top: 10px;
+      padding: 8px;
+      color:hsl(264, 8%, 88%);
+      font-size: 12px;
+      animation-name: changeColor;
+      animation-duration: 2s;
+      animation-delay: 10s;
+    }
+
+
+    @keyframes changeColor {
+      0%{background-color:powderblue;}
+      25%{background-color: palevioletred;}
+      50%{background-color:sandybrown}
+      25%{background-color:springgreen}
+  }
+
+    .angleRightCircle{
+      background-color: hsl(271, 36%, 24%);
+      border-radius: 50%;
+      color:white;
+      display: flex;
+      justify-content: center;
+      width:30px;
+      height: 30px;
+      animation-name: moveLeft;
+      animation-duration: 2s;
+      animation-delay: 10s;
+    }
+      
+    .content{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      margin:auto;
+      left: 740px;
+      top:300px;
+      
+    }
+
+    .content p{
+      line-height: 25px;
+      font-weight: 500;
+      margin-top: 20px;
+      color:hsl(270, 7%, 64%);
+    }
+
+   .attribution{
+     position: absolute;
+     bottom: 0px;
+     left:640px;
+     
+   }
+
+   @media only screen and (max-width:1440px){
+   }
+
+   @media screen and (max-width: 375px) {
+
+    .purple{
+        position: absolute;
+        height: 1200px;
+        width:800px;
+    }
+
+
+    .iphone
+    {
+        position: relative;
+        left:500px;
+        top:250px;
+        height: 810px;
+        width:410px;
+        
+        
+    }
+
+    .typeMsg{
+      font-size: 20px;
+      width: 300px;
+      
+    }
+
+    .dog{
+      width:80px;
+      height:80px ;
+    }
+    .rightMsg{
+      width:250px;
+        font-size: 20px;
+    }
+    .leftMsg{
+        width:250px;
+        font-size: 20px;
+    }
+
+    .payment{
+      width:220px;
+      font-size: 20px;
+    }
+    .content{
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 300px;
+      position: absolute;
+      margin:auto;
+      left: 720px;
+      top:1150px;
+      font-size: 22px;
+      
+    }
+
+}
+   
